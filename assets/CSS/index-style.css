@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+  font-family: 'Royal Knight';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/Fonts/RoyalKing-Free.woff') format('woff');
+}
+@font-face {
+  font-family: 'Kingdom';
+  font-style: normal;
+  font-weight: 200;
+  src: url('./assets/Fonts/Kingdom.woff') format('woff');
+}
+@font-face {
+  font-family: 'BrokenKnight';
+  font-style: normal;
+  font-weight: 200;
+  src: url('/assets/Fonts/BrokenKnight.woff') format('woff');
+}
+.header{
+  background: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 20px 5px;
+  font-family: 'Royal Knight';
+}
+.header p{
+  font-size: 20px;
+}
+body{
+  background: url(/assets/Images/backgroundIndex.png);
+  background-size: 100% ;
+  font-family: 'Kingdom';
+}
+footer{
+  justify-content: center;
+  text-align: center;
+  background-color: #271f1879;
+  border-radius: 20px;
+  margin: 0px 20px;
+}
+
+.body2{
+  display: grid;
+  background-color: #271f1879;
+  justify-content: center;
+  text-align: center;
+  border-radius: 35px;
+
+}
+.body2 img{
+  width: 40px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+#demo {
+  font-size: 40px;
+  margin: 20px;
+}
+.body2 button{
+  margin: 20px;
+}
+.information{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 0px 20px;
+
+}
+.infoclass a{
+  position: relative;
+  bottom: 5px;
+  color: #f2f2f2;
+}
+.infoclass img{
+  width: 20px;
+}
+.stuff img{
+  width: 20px;
+}
+.infolink{
+  position: relative;
+  bottom: 5px;
+  top: -5px;
+  color: #f2f2f2;
+}
+.datacontact{
+  margin: 5px 0px;
+}
+.text1{
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+.body1 {
+  display: flex;
+  margin: 20px 20px;
+  flex-direction: column;
+  background-color:#271f1879;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  color: #f2f2f2;
+}
+.pseudobutton {
+  text-decoration: none;
+    display: inline-block;
+    border: none;
+    padding: 8px 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.pseudobutton:hover{
+  background-color: black;
+  text-decoration: none;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+.realcontact{
+  justify-content: center;
+}
+.mySlides {
+    display: none;
+}
+.mySlides img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 500px;
+  margin: 0px 200px;
+  width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*media queiris*/
+@media (min-width: 320px){
+  .text1 h3, .text1 p{
+    width: auto;
+    margin: 20px;
+  }
+  .header img{
+    width: 300px;
+    height: auto;
+  }
+  .body1 {
+    display: grid;
+    width: auto;
+    margin: 10px 20px;
+  }
+  .body2{
+    width: auto;
+    margin: 10px 20px;
+  }
+  .information{
+    display: grid;
+    font-size: 13px;
+  }
+  .datacontact{
+    display: grid;
+    font-size: 13px;
+  }
+}
+@media (min-width: 375px){
+  .text1 h3, .text1 p{
+    width: auto;
+  }
+  .body1{
+    width: auto;
+    margin: 20px;
+  }
+  .body2{
+    width: auto;
+    margin: 20px;
+  }
+
+}
+@media (min-width: 425px){
+  .text1 h3, .text1 p{
+    width: auto;
+  }
+  .body1{
+    width: auto;
+    display: flex;
+  }
+}
+@media (min-width: 768px){
+  .text1 h3, .text1 p{
+    width: auto;
+  }
+  .header p{
+    font-size: 30px;
+  }
+  .header img{
+    width: 350px;
+  }
+  .body1{
+    display: flex;
+    width: fit-content;
+  }
+  .information{
+    display: flex;
+  }
+  .information a{
+    margin: 5px;
+  }
+  .infoclass a{
+    font-size: 13px;
+  }
+  .infoclass img{
+    width: 40px;
+  }
+  .realcontact{
+    display: flex;
+  }
+  .realcontact a{
+    margin: 5px;
+  }
+  .datacontact{
+    margin: 20px;
+  }
+  .datacontact a{
+    font-size: 13px;
+  }
+  .stuff{
+    display: grid;
+    justify-items: center;
+  }
+  .stuff img{
+    width: 40px;
+  }
+}
+@media (min-width: 1024px){
+  .text1 h3, .text1 p{
+    width: auto;
+  }
+  .body1{
+    width: fit-content;
+  }
+  .information{
+    display: flex;
+    margin: auto;
+  }
+  .infoclass {
+    margin: 20px;
+    display: grid;
+    justify-items: center;
+  }
+}
+@media (min-width: 1325px){
+  .text1 h3, .text1 p{
+    width: auto;
+  }
+  .body1{
+    width: fit-content;
+  }
+}
+@media (min-width: 1440px){
+  .text1 h3, .text1 p {
+    width: auto;
+  }
+  .body1{
+    width: fit-content;
+  }
+}
+@media (min-width: 2560px){
+  .text1 h3, .text1 p{
+    width: auto;
+  }
+  .body1{
+    width: fit-content;
+  }
+}

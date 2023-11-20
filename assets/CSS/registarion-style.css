@@ -1,0 +1,983 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'Bisdak';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/Fonts/Bisdak.woff') format('woff'); 
+}
+@font-face {
+    font-family: 'Mestizo';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./assets/Fonts/MestizoFont.woff') format('woff');
+}
+@font-face {
+    font-family: 'BrokenKnight';
+    src: url('./assets/Fonts/BrokenKnight.woff') format('woff');
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.contact a{
+    width: 120px;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.767);
+}
+.datacontact{
+    font-size: 16px;
+    margin: 7px 0px;
+}
+.infocontact{
+    display: flex;
+}
+.infocontact a{
+    position: relative;
+    top: 3px;
+}
+.infocontact img{
+    width: 20px;
+    height: 20px;
+}
+.header{
+    background: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 20px 5px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+.header img{
+    width: 400px;
+    height: auto;
+}
+
+.typewriter  {
+    font-size: 20px;
+    overflow: hidden; 
+    border-right: .15em solid; 
+    white-space: nowrap; 
+    font-family: 'Bisdak';
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    width: auto;
+    text-align: center;
+  }
+  
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+  }
+body {
+    width: 900px;
+    height: 400px;
+    font-family:Tahoma;
+    background: url(/assets/Images/backgroundRegistarion.png);
+    background-size: 100% 250%;
+    background-repeat: no-repeat;
+}
+
+.header p{
+    color:#ffffff;
+    font-size: 200;
+}
+.footer{
+    background: none;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bisdak';
+    margin: 20px 0px;
+}
+.link1 {
+    background-color: none;
+    display: flex;
+    width: 100%;
+    border: none;
+    outline-style: solid;
+    position: relative;
+    text-align: center;
+    border-radius:  8px;
+    color: #271f18;
+    margin: 10px 0px;
+    
+}
+.link2 {
+    background-color: none;
+    display: flex;
+    border: none;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    text-align: center;
+    margin: 10px 0px;
+    outline-style: solid;
+    border-radius: 8px;
+    color: rgb(218, 165, 32);
+}
+.pseudolink{
+    text-decoration:underline rgba(0, 0, 0, 0.397);
+    display: flex;
+    border: none;
+    margin-right: 675px;
+    margin-left: 20px;
+    padding: 8px 8px;
+    color: white;
+    font-family: 'Bisdak';
+    transition: 0.5s;
+}
+.pseudolink:hover{
+    color: #333333;
+}
+.pseudobutton{
+        text-decoration: none;
+        padding: 0.5rem;
+        display: flex;
+        margin-right: 20px;
+        margin-left: 0px;
+        text-align: center;
+        top: 1px;
+        position: relative;
+        font-family: 'Mestizo';
+        transition: 0.5s;
+        cursor: pointer;
+}
+.link1 button,.link2 button{
+    border: none;
+    border-radius: 2px;
+    background-color: #333333;
+    color: #ffffff;
+}
+.tab button{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 128px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.tablinks{
+    font-family: 'BrokenKnight';
+}
+.tab {
+    overflow: hidden;
+    border: none;
+    background-color: #f1f1f1;
+    outline-width: 2px;
+    cursor: pointer;
+    background: transparent;
+}
+.tab button:hover{
+    background:#271f18;
+    color: #f1f1f1;
+}
+.tab button:active{
+    background: none;
+    color: #f1f1f1;
+}
+.tabcontent{
+    display: none;
+    border: none;
+    position: relative;
+    outline-width: 2px;
+}
+.tabcontent p{
+    font-family: 'Bisdak';
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 10px;
+}
+@media (min-width: 320px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 40px;
+    }
+    .header img{
+        width: 150px;
+        height: auto;
+    }
+    .typewriter{
+        font-size: 8px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 45px;
+    }
+    .tabcontent{
+        margin: 0px 45px;
+    }
+    .tab button{
+        padding: 14px 23px;
+        font-size: 18px;
+    }
+    .pseudolink{
+        margin: 0px;
+        font-size: 7px;
+        width: 156px;
+        padding: 8px 0px;
+        justify-content: center;
+    }
+    .pseudobutton{
+        font-size: 10px;
+        margin: 7px 0px;
+    }
+    .footer{
+        width: 320px;
+        font-size: 8px;
+    }
+    .datacontact{
+        font-size: 6px;
+    }
+    .contact{
+        display: grid;
+    }
+}
+@media (min-width: 350px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 35px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 35px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 35px;
+    }
+    .header img{
+        width: 150px;
+        height: auto;
+    }
+    .typewriter{
+        font-size: 8px;
+    }
+    .tab button{
+        padding: 14px 32px;
+        font-size: 17px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 8px;
+        width: 156px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 12px;
+        margin: 7px 0px;
+    }
+    .footer{
+        width: auto;
+    }
+    .contact{
+        display: grid;
+    }
+    .datacontact{
+        margin: 10px;
+    }
+}
+@media (min-width: 400px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 50px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 50px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 50px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 35px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 9px;
+        width: 156px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 14px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 450px){
+    body{
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 55px;
+    }
+    .typewriter{
+        font-size: 11px;
+    }
+    .header img{
+        width: 200px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 55px;
+    }
+    
+    .tab button{
+        padding: 14px 39px;
+        font-size: 20px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 9px;
+        width: 176px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+    .datacontact{
+        font-size: 8px;
+    }
+    .contact{
+        display: flex;
+    }
+}
+@media (min-width: 480px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 55px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 55px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 55px;
+    }
+    .footer{
+        width: auto;
+    }
+    .header img{
+        width: 200px;
+        height: auto;
+    }
+    .typewriter{
+        font-size: 10px;
+    }
+    .tab button{
+        padding: 14px 41px;
+        font-size: 24px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 9px;
+        width: 176px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 17px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 530px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 60px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 60px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 60px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 48px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 9px;
+        width: 226px;
+
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 580px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 65px;
+    }
+    .typewriter{
+        font-size: 13px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 65px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 65px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 53px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 226px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 18px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 630px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 70px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 70px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 70px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 61px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 246px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 14px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 680px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 75px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 75px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 75px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 68px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 246px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 14px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 730px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 80px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 80px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 80px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 74px;
+    }
+    .typewriter{
+        font-size: 14px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 271px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 768px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 85px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 85px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 85px;
+    }
+    .footer{
+        width: auto;
+    }
+    .header img{
+        width: 300px;
+        height: auto;
+    }
+    .tab button{
+        padding: 14px 79px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 271px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+    
+    .contact{
+        display: flex;
+    }
+    .datacontact{
+        margin: 15px;
+    }
+}
+@media (min-width: 810px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 90px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 90px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 90px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 84px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 271px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 860px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 95px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 95px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 95px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 91px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 311px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 910px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 100px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 100px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 100px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 98px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 361px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 960px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 105px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 105px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 105px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 104px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 411px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 1024px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 110px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 110px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 110px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 113px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 461px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+    .datacontact {
+        font-size: 8px;
+    }
+}
+@media (min-width: 1050px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 115px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 115px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 115px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 115px;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 511px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 1100px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 120px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 120px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 120px;
+    }
+    .footer{
+        width: auto;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 561px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 1150px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 125px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 125px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 125px;
+    }
+    .footer{
+        width: auto;
+    }
+    .pseudolink{
+        margin: 0px;
+        margin-right: auto;
+        font-size: 10px;
+        width: 611px;
+        padding: 8px 0px;
+    }
+    .pseudobutton{
+        font-size: 16px;
+        margin: 7px 0px;
+    }
+}
+@media (min-width: 1200px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 130px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 130px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 130px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 111px;
+    }
+    .pseudolink{
+        width: 661px;
+        margin-right: auto;
+        padding: 12px 8px;
+    }
+    .pseudobutton{
+        margin-left: 20px;
+        margin-right: 5px;
+        top: 4px;
+        bottom: -4px;
+    }
+}
+@media (min-width: 1325px){
+    body {
+        width: auto;
+    }
+    .header{
+        width: auto;
+        margin: 0px 135px;
+    }
+    .tab{
+        width: auto;
+        margin: 0px 135px;
+    }
+    .tabcontent{
+        width: auto;
+        margin: 0px 135px;
+    }
+    .footer{
+        width: auto;
+    }
+    .tab button{
+        padding: 14px 153px;
+    }
+    .pseudolink{
+        width: 400px;
+        margin-right: auto;
+        padding: 12px 8px;
+    }
+    .pseudobutton{
+        margin-left: 20px;
+        margin-right: 5px;
+        top: 4px;
+        bottom: -4px;
+    }
+}
