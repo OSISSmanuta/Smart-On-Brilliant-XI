@@ -7,19 +7,19 @@
   font-family: 'Royal Knight';
   font-style: normal;
   font-weight: 400;
-  src: url('Smart-On-Brilliant-XI/assets/Fonts/RoyalKing-Free.woff') format('woff');
+  src: url('/Fonts/RoyalKing-Free.woff') format('woff');
 }
 @font-face {
   font-family: 'Kingdom';
   font-style: normal;
   font-weight: 200;
-  src: url('Smart-On-Brilliant-XI/assets/Fonts/Kingdom.woff') format('woff');
+  src: url('/Fonts/Kingdom.woff') format('woff');
 }
 @font-face {
   font-family: 'BrokenKnight';
   font-style: normal;
   font-weight: 200;
-  src: url('Smart-On-Brilliant-XI/assets/Fonts/BrokenKnight.woff') format('woff');
+  src: url('/Fonts/BrokenKnight.woff') format('woff');
 }
 .header{
   background: none;
@@ -34,7 +34,7 @@
   font-size: 20px;
 }
 body{
-  background: url(Smart-On-Brilliant-XI/assets/Images/backgroundIndex.png);
+  background: url("/Images/backgroundIndex.png");
   background-size: 100% ;
   font-family: 'Kingdom';
 }
